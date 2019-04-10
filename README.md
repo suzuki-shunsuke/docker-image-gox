@@ -9,6 +9,7 @@ Docker image for [gox](https://github.com/tcnksm/gox)
 https://hub.docker.com/r/suzukishunsuke/gox/
 
 * Alpine
+* Golang
 * [gox](https://github.com/mitchellh/gox)
 
 ## License
