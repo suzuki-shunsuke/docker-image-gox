@@ -1,8 +1,8 @@
-FROM golang:1.12.3 AS go-build-env
+FROM golang:1.12.6 AS go-build-env
 # Unfortunately gox's binary isn't released so build it
 RUN go get github.com/mitchellh/gox
 
-FROM golang:1.12.3-alpine3.9
+FROM golang:1.12.6-alpine3.9
 COPY --from=go-build-env /go/bin/gox /usr/local/bin/
 RUN \
     apk add --no-cache ca-certificates  && \
